@@ -1,0 +1,30 @@
+<!--Create a webpage to handle collection of objects usin javascript-->
+<html>
+<head></head>
+<body>
+<h3>Object programming in js</h3>
+<hr/>
+<input type="button"value="Get allStudent details"onclick="f1()"/>
+<br></br>
+<table id="table1"border="2"width="3"></table>
+<script>
+function()
+{
+var students=[
+{sid:1025,sname:"scott"};
+{sid:1026,sname:"scott1"};
+{sid:1027,sname:"scott2"};
+
+];
+var str="";
+for(var i=0;i<=students.length-1;i++)
+{
+str+="<tr><td>"+students[i].sid+"</td>";
+str+="<td>"+students[i].sid+"</td></tr>";
+}
+var obj=document.getElementById("table1");
+obj.innerHTML=str;
+}
+</script>
+</body>
+</html>

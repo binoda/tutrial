@@ -1,0 +1,35 @@
+<!--Create a webpage to change the background color of selected paragraph-->
+<html>
+<head></head>
+<style>
+p
+{
+border:2px solid black;
+padding:5px;
+}
+</style>
+<body>
+<h3>Updating styles using js</h3>
+<hr/>
+<p onMouseOver="f1(this)"
+   onMouseOut="f2(this)">
+   This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.</p>
+   <p onMouseOver="f1(this)"
+   onMouseOut="f2(this)">
+   This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.</p> 
+   <p onMouseOver="f1(this)"
+   onMouseOut="f2(this)">
+   
+   This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.This is paragraph used for writing paragraph program.</p>
+   <script>
+   function f1(obj)
+   {
+   obj.style.background-color="lightpink";
+   }
+   function f2(obj)
+   {
+   obj.style.background-color="white";
+   }
+   </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- Create a webpage to perform math operation using single operation.-->
+<html>
+<head></head>
+<body>
+<h3>JavaScript programming</h3>
+<hr/>
+First Number:
+<input type="text"id="t1"/>
+<br></br>
+Second Number:
+<input type="text"id="t2"/>
+<br></br>
+<input type="button"onclick="f1('sum')"value="sum"/>
+<input type="button"onclick="f1('sub')"value="sub"/>
+<input type="button"onclick="f1('mul')"value="mul"/>
+<input type="button"onclick="f1('div')"value="div"/>
+<br/>
+<p id="p1"></p>
+<script>
+function f1(arg)
+{
+var obj1=document.getElementById("t1");
+var obj2=document.getElementById("t2");
+var obj3=document.getElementById("p1");
+var x=parseInt(obj1.value);
+var y=parseInt(obj2.value);
+var z=0;
+if (arg=="sum"){z=x+y;}
+if (arg=="sub"){z=x-y;}
+if (arg=="mul"){z=x*y;}
+if (arg=="div"){z=x/y;}
+obj3.innerHTML="Results:"+z;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!--implementing upper case and lower case-->
+<html>
+<head>
+<script>
+function f1()
+var obj=document.getElementById("t1");
+var spobj1=document.getElementById("sp1");
+var spobj2=document.getElementById("sp2");
+spobj1.innerText=obj.value.toUpperCase();
+spobj2.innerText=obj.value.toLowerCase();
+</script>
+</head>
+<body>
+<h1>Program javascript Demo</h1></hr>
+Enter your Name:<input type="text"onkeyup="f1()"id="t1"/>
+<br></br>
+<span id="sp1"></span></br>
+<span id="sp2"></span>
+</body>
+</html>

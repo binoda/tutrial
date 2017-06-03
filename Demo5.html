@@ -1,0 +1,58 @@
+<!--Create a webpage to display sum,div,mul,sub in a program-->
+<html>
+<head></head>
+<body>
+<h3>JavaScript Programming</h3>
+</hr>
+First Number:
+<input type="text"id="t1"/>
+<br></br>
+Second Number:
+<input type="text"id="t2"/>
+<br></br>
+<input type="button"value="Sum"
+			onclick="f1()"/>
+<input type="button"value="sub"
+			onclick="f2()"/>
+<input type="button"value="Div"
+			onclick="f3()"/>
+<input type="button"value="mul"
+			onclick="f4()"/>
+<p id="p1"></p>
+<script>
+function f1()
+{
+var obj1=document.getElementById("t1");
+var obj2=document.getElementById("t2");
+var obj3=document.getElementById("p1");
+var sum=parseInt(obj1.value)+parseInt(obj2.value);
+obj3.innerHTML=sum;
+}
+function f2()
+{
+var obj1=document.getElementById("t1");
+var obj2=document.getElementById("t2");
+var obj3=document.getElementById("p1");
+var sub=parseInt(obj1.value)-parseInt(obj2.value);
+obj3.innerHTML=sub;
+}
+function f3()
+{
+var obj1=document.getElementById("t1");
+var obj2=document.getElementById("t2");
+var obj3=document.getElementById("p1");
+var div=parseInt(obj1.value)/parseInt(obj2.value);
+obj3.innerHTML=div;
+}
+function f4()
+{
+var obj1=document.getElementById("t1");
+var obj2=document.getElementById("t2");
+var obj3=document.getElementById("p1");
+var mul=parseInt(obj1.value)*parseInt(obj2.value);
+obj3.innerHTML=mul;
+}
+</script>
+
+</body>
+</html>

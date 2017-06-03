@@ -1,0 +1,22 @@
+<!--create a webpage to display array elements as ordered list format-->
+<html>
+<head>
+<script>
+function f1()
+{
+var ar={10,20,30,40};
+var obj=document.getElementById("list1");
+obj.innerHtml="";
+for(i=0;i<ar.length;i++)
+{
+obj.innerHtml="<li>"+ar[i]+"</li>";
+}
+}
+</script>
+</head>
+<body>
+<h1>JavaScript programming with Array </h1><hr/>
+<input type ="button"onclick="f1()"value ="Display"/></br>
+<ul id="list1"></ul>
+</body>
+</html>

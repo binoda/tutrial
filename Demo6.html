@@ -1,0 +1,53 @@
+<!--Create a webpage to display selected image using javaScript-->
+<html>
+<head>
+<style>
+
+#div
+{
+margin:0 auto;
+height:400px;
+width:300px;
+overflow:hidden;
+}
+</style>
+
+</head>
+<body>
+<h3>JavaScript Programming .</h3>
+<hr/>
+Selected Images:
+<select id="s1"onchange="f1()">
+<option>Image1.jpg</option>
+<option>Image2.jpg</option>
+<option>Image3.jpg</option>
+<option>Image4.jpg</option>
+<option>Image5.jpg</option>
+</select>
+<br></br>
+<input type="button"value="Zoom in" onclick="f2()"/>
+<input type="button"value="Zoom out"/><br/>
+<div id="div1">
+<img id="img1"src="Images/image1.jpg" height="190"width="220"border="2"/>
+</div>
+<script>
+function f1()
+{
+var obj1=document.getElementById("img1");
+var obj2=document.getElementById("s1");
+var str="images/"+obj2.value;
+obj1.src=str;
+}
+function f2()
+{
+    img=document.getElementById("img1")
+    wid=img.width
+    ht=img.height
+    img.style.width=(wid*f2)+"px"
+    img.style.height=(ht*f2)+"px"
+    img.style.marginLeft = -(img.width/2) + "px";
+    img.style.marginTop = -(img.height/2) + "px";
+}
+</script>
+</body>
+</html>

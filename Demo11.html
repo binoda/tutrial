@@ -1,0 +1,49 @@
+<!--Create a webpage to change the background
+ color of selected paragraph-->
+<html>
+<head>
+<style>
+p
+{
+border:2px solid black;
+padding:5px;
+}
+</style>
+</head>
+<body>
+<h3>Updating styles using javascript</h3>
+<hr/>
+<p onmouseover="f1(this);"
+   onmouseout="f2(this);">this is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraph</p>
+   <p onmouseover="f1(this);"
+   onmouseout="f2(this);">this is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraph</p>
+   <p onmouseover="f1(this)";
+   onmouseout="f2(this);">this is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraphthis is a text paragraph.
+   this is a text paragraph</p>
+   <script>
+   function f1(obj)
+   {
+	alert("hii");
+   }
+   function f2(obj)
+   {
+   //obj.style.background-color="blue";
+   //alert("hello");
+   }
+   </script>
+</body>
+</html>

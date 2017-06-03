@@ -1,0 +1,32 @@
+<!--Create a webpage to display background color based on mouse event-->
+<html>
+<head>
+<style>
+div
+{
+border:2px solid Red;
+width:300px;
+height:100px;
+}
+</style>
+<script>
+function f1()
+{
+var obj=document.getElementById("div1");
+obj.style.background-color="pink";
+obj.style.color="blue";
+}
+function f2()
+{
+var obj=document.getElementById("div1");
+obj.style.background-color="white";
+obj.style.color="black";
+}
+</script>
+<body>
+<h1>JavaScript Demo</h1>
+<div id="div1"onmouseover="f1()"onmouseout="f2()"><br/>
+			  Dynamic styles using JavaScript </div>
+</body>
+</head>
+</html>
